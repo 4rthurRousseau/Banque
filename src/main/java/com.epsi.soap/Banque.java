@@ -1,12 +1,11 @@
 package com.epsi.soap;
 
-import java.util.List;
+import java.util.HashMap;
 
 @javax.jws.WebService
 public class Banque {
 
-    public static List<Customer> accounts;
-
+    public static HashMap<String, Customer> accounts;
 
     public int crediter(int... nombres){
         int resultat = 0;
@@ -24,8 +23,18 @@ public class Banque {
         return resultat;
     }
 
-    public void creerCompte()
+    public void createAccount(String login, String password) throws Exception
     {
+        if(accounts.containsKey(login)){
+            throw new Exception("this login is already used");
+        }
 
+        Customer c = new Customer(login, password);
+
+    }
+
+    public void createAccount(String login, String password, int balance)
+    {
+        Customer c = new Customer(login, password, balance);
     }
 }
