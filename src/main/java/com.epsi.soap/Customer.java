@@ -5,10 +5,22 @@ public class Customer {
     private String password;
     private double balance;
 
+    public Customer(String login, String password, double balance) {
+        this.login = login;
+        this.password = password;
+        this.balance = balance;
+    }
+
+    public Customer(String login, String password) {
+        this.login = login;
+        this.password = password;
+        this.balance = 0;
+    }
+
     public String getLogin() {
         return login;
     }
-
+    x²
     public void setLogin(String login) {
         this.login = login;
     }
