@@ -17,22 +17,6 @@ public class Customer {
         this.balance = 0;
     }
 
-    public String getLogin() {
-        return login;
-    }
-    x²
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     public double getBalance() {
         return balance;
     }
