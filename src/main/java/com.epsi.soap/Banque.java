@@ -1,10 +1,11 @@
 package com.epsi.soap;
 
 import javax.annotation.Resource;
+import javax.jws.soap.SOAPBinding;
 import javax.xml.ws.WebServiceContext;
 import java.util.HashMap;
 
-
+@javax.jws.soap.SOAPBinding(style = SOAPBinding.Style.RPC)
 @javax.jws.WebService
 public class Banque {
 
