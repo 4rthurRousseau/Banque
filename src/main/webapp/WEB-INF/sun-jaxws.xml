@@ -2,7 +2,9 @@
 <endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
 
     <endpoint
-            name="testSoap"
-            implementation="com.btourman.soap.TestSoapWebService"
-            url-pattern="/testSoap"/>
+            name="createAccount"
+            implementation="com.epsi.soap.Banque"
+            url-pattern="/create"/>
+
+
 </endpoints>
